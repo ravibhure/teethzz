@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head id="Head1"><title>
+	About Us : Teethzz.com
+</title><link href="AboutUs_files/teethzz0.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="AboutUs_files/jquery-1.js"></script>
+    <script type="text/javascript">
+
+    /*** 
+        Simple jQuery Slideshow Script
+        Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+    ***/
+
+    function slideSwitch() {
+        var $active = $('#slideshow IMG.active');
+
+        if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+        // use this to pull the images in the order they appear in the markup
+        var $next =  $active.next().length ? $active.next()
+            : $('#slideshow IMG:first');
+
+        // uncomment the 3 lines below to pull the images in random order
+        
+        // var $sibs  = $active.siblings();
+        // var rndNum = Math.floor(Math.random() * $sibs.length );
+        // var $next  = $( $sibs[ rndNum ] );
+
+
+        $active.addClass('last-active');
+
+        $next.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                $active.removeClass('active last-active');
+            });
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+
+    </script>
+
+    <style type="text/css">
+
+    /*** set the width and height to match your images **/
+
+    #slideshow {
+        position:relative;
+        height:350px;
+    }
+
+    #slideshow IMG {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:8;
+        opacity:0.0;
+    }
+
+    #slideshow IMG.active {
+        z-index:10;
+        opacity:1.0;
+    }
+
+    #slideshow IMG.last-active {
+        z-index:9;
+    }
+    .style2
+        {
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="AboutUs.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjM3MDgxODEzZGRY4MD3ZoE2HjbUmgUqiKJUQktlzQ==">
+
+    <center>
+        <div class="header">
+            <table cellpadding="0" cellspacing="0" border="0" width="1000px">
+                <tr>
+                    <td rowspan="2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td rowspan="2">
+                        <a href="Default.html"><img style="border:0px;" alt="Teethzz" title="Teethzz" src="AboutUs_files/logo0000.gif"></a>
+                    </td>
+                    <td valign="top" align="right">
+                    <table cellpadding="6" cellspacing="6" border="0"><tr><td><a href="Login.html">Login</a> | <a href="AboutUs.html#">Register</a></td></tr></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td class="address">
+                                                208, Sterling Center, Above Barista Cafe,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Opp. Hotel Aurora Towers, M.G. Road, Camp,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Pune-411001.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+                                                <img alt="Call Us" title="Call Us" src="AboutUs_files/tel00000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                020-26054010
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                9049455871, 9423637534
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img alt="Send Mail" title="Send Mail" src="AboutUs_files/email000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                <a href="mailto:care@teethzz.com">care@teethzz.com</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td colspan="3">
+                                    
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td><a href="AboutUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" style="color:Black; text-decoration:underline;">About Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Treatments.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Treatments</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="ContactUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Contact Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Sitemap.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Sitemap</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    </tr>
+                                    </table>
+                                    
+                                    </td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="midLayer">
+        <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td valign="top"><div class="leftPan">
+                <div class="menuLeft">
+                </div>
+                <div class="menuMid">
+                    <span class="cssMenu">Menu</span></div>
+                <div class="menuRight">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="AboutUs_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CorporateOffers.html" class="blueheading">Corporate Offers</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="AboutUs_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="DoDont.html" class="blueheading">Do &amp; Don't</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="AboutUs_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="FAQ.html" class="blueheading">FAQ</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="AboutUs_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Selfcare.html" class="blueheading">Self-Care</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="AboutUs_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Research.html" class="blueheading">Research</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="AboutUs_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CaseStudy.html" class="blueheading">Case Study</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="reqAppointment">
+                    <a href="AboutUs.html#"><img alt="Request an Appointment" style="border:0px;" title="Request an Appointment" src="AboutUs_files/reqApp00.png"></a></div>
+                <div class="testimonialTop">
+                    <img src="AboutUs_files/testimoo.png"></div>
+                <div class="testimonialMid">
+                    <div class="testimonialCss">Testimonials</div>
+                    <div class="testimonialContent">The Dental Care is On a Very High Level, I Am Pleasantly Surprised By The Quality Of Work, The Clinic Is Very Clean And Modern.</div>
+                    <div class="testimonialBy">- Rubina Shaikh, Pune</div>
+                    
+                    <div class="testimonialContent">The Treatment Was Very Professional, Fast And I Was Very Happy With it. His Work Is Very Good, Enviroment is Clean, He Is A Very Helpful &amp; Diligent Dentist.</div>
+                    <div class="testimonialBy">- Vivek, Tech Mahihindra, Pune</div>
+                    
+                    <div class="testimonialContent">Very Nice, Sweet And Meditating Dentist. Beautiful explanations &amp; clarifications and very soft hand.</div>
+                    <div class="testimonialBy">- Rowshan Sudabi, Iran</div>
+                </div>
+                <div class="testimonialBtm">
+                    <img src="AboutUs_files/testimop.png"></div>
+            </div></td>
+        <td valign="top">
+            
+            <div style="margin-top:7px; margin-right:4px;">
+            <div style="margin-bottom:7px;"><img src="AboutUs_files/AboutUs0.png"></div>
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr><td class="headerText">About Us</td><td rowspan="2" valign="top">
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td><img src="AboutUs_files/Abt20000.png"></td></tr>
+<tr><td><div style="margin-top:7px;"><img src="AboutUs_files/Abt10000.png"></div></td></tr>
+</table>
+                    </td></tr>
+                
+                <tr>
+                
+                <td><div style="margin-bottom:30px; margin-top:7px; margin-right:5px;">Pune is a  large industrial, educational,business and residential area  in Maharashtra State of India, but as compared with  Economical Capital Region of Mumbai. Pune, is a small city and has many malls, hotels, restaurants, nightclubs and cinema multiplexes. It also has large residential colonies. It prides itself in its infra-structure and has wide highways and a connecting expressway to Mumbai and Bangalore city. The township also has many prestigious educational institutions, schools and hospitals. University of Pune, one of the premier universities in India, spread over 411 acres of green lush area and is popularly known as the 'Oxford of the East'. It has about 307 recognized research institutes and 612 affiliated colleges offering graduate and under-graduate courses.
+<br><br>
+Pune is also one of the largest industrial townships of Asia. It has an IT hub with several leading software companies and BPOs operating from here, as well as a Special Economic Zone that has attracted many offices and industries.
+ The Film and Television Institute of India (FTII) imparting training in film making and television programme production. Today the FTII is considered as a Center of Excellence not only in India but also in Asia and Europe. Pune has a large sports stadium, and a 18 hole golf course to boast off.
+<br><br>
+Significant cost differences exist between WESTERN WORLD countries and India when it comes to dental treatment. Accompanied with the cost are waiting times which exist in many countries from 3 months to over 6 months. 
+India is not only cost effective but the waiting time is almost nil. This is due to the outburst of the private sector which comprises of hospitals and clinics with the latest technology and best practitioners trained equally well as their western counterparts.
+<br><br>
+Traveling to India and getting your dental treatment needs fulfilled is not only sensible on costing front, you can have our clinic provide you with all the help in planning your stay and travel within India, thus reducing reliance on non-professionals.
+<br><br>
+Our tour operators would be glad to help you in all these regards making your stay more meaningful.</div></td>
+                </tr>
+                </table>
+            
+            </div>
+            
+            </td>
+        </tr>
+        
+        </table>
+            
+            
+        </div>
+        <div class="footer">
+            <a href="AboutUs.html#">HOME</a> <span class="horLine">|</span> <a href="AboutUs.html#">ABOUT US</a> <span class="horLine">|</span> <a href="AboutUs.html#">PRIVACY</a> <span class="horLine">|</span>
+            <a href="AboutUs.html#">FAQ</a> <span class="horLine">|</span> <a href="AboutUs.html#">CONTACT US</a><br>
+            Copy Rights 2011. All Rights Reserved.
+        </div>
+    </center>
+    </form>
+</body>
+</html>
+
+
+<!-- This document saved from AboutUs.html -->

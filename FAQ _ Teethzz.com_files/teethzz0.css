@@ -1,0 +1,54 @@
+body { margin:0px; padding: 0px; background-color:#a9a9a9; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size: small; }
+.slidingDiv { height:300px; background-color: #99CCFF; padding:20px; margin-top:10px; border-bottom:5px solid #3399FF; }  
+.show_hide { display:none; }
+.subhtext { FONT-WEIGHT: normal; FONT-SIZE: 14px; font-weight:bold; text-decoration:underline; COLOR: #ff3333; FONT-STYLE: normal; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif; }
+
+.header { background-image:url('bg_heade.gif'); width:1000px; text-align: left; }
+.midLayer { width:1000px; text-align:left; background-color:#f3ffff; }
+.leftPan { float:left; padding:6px; width:210px; background-color:#f3ffff; }
+.rightPan { float:right; padding-top:7px; }
+.menuLeft { background-image:url('menuLeft.png'); width:14px; height:28px; float:left; }
+.menuMid { background-image:url('menuMid0.png'); padding-top:5px; float:left; width:180px; height:23px; }
+.menuRight { background-image:url('menuRigh.png'); width:14px; height:28px; float:left; }
+
+.leftHMenu { background-image:url('leftHMen.png'); width:13px; height:27px; float:left; }
+.midHMenu { background-image:url('midHMenu.png'); padding-top:5px; float:left; text-align:center; width:90px; height:22px; }
+.midHMenuWide { background-image:url('midHMenu.png'); padding-top:5px; float:left; text-align:center; width:110px; height:22px; }
+.midHMenuSmall { background-image:url('midHMenu.png'); padding-top:5px; float:left; text-align:center; width:50px; height:22px; }
+.rightHMenu { background-image:url('rightHMe.png'); width:13px; height:27px; float:left; }
+
+.cssMenu { color:#ffffff; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; }
+#menuBlk { clear:both; background-color:#707070; height:25px; width: 206px; margin-left:1px; padding-top:5px; }
+.menuHorizontalBar { background-image:url('menuSpac.gif'); height:1px; width:206px; margin-left:1px; }
+.cssMenuItem { color:#ffffff; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:small; }
+.imgMenu { padding-left:10px; padding-right:5px; }
+.reqAppointment { margin-left:1px; margin-top:8px; }
+.footer { clear:both; background-color:#ef680c; width:1000px; height:45px; padding-top:7px; }
+.footer a { color:#000000; }
+.horLine { color:#ffffff; }
+.testimonialTop { padding-top:7px; }
+.testimonialMid { background-image:url('testimon.png'); position:relative; width:193px; padding-left:7px; padding-right:7px; }
+.testimonialBtm { }
+
+.bodySec { padding-top:186px; }
+.headerSec { background-image:url('file://localhost/C:/Documents%20and%20Settings/rbhure/Desktop/www.vijayshanti.com/Customers/teethzz/images/bodyHeader.png'); background-repeat:repeat-x; height:395px; width:769px; border-style:solid; border-width:1px; border-color:#bdbdbd; }
+.bodyFooter { background-color:#baebff; width:771px; height:90px; margin-top:7px; margin-bottom:7px; }
+
+.imgContactUs { margin-top:7px; margin-left:-3px; }
+.googleMap { margin-top:7px; }
+.headerText { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px; text-decoration:underline; }
+
+.testimonialCss { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; font-size:16px; width:100%; text-align:center; text-decoration:underline; }
+.testimonialContent { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; margin-top:10px; line-height:20px; }
+.testimonialBy { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; color:Blue; }
+
+.address { font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; }
+.blueheading { color: #ffffff; font-weight: bold; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 13px; text-decoration: none; }
+a.blueheading:hover { color: #000000; font-weight: bold; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 13px; text-decoration: underline; }
+.headertext { FONT-WEIGHT: normal; FONT-SIZE: 13px; COLOR: #333333; FONT-STYLE: normal; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, sans-serif; }
+
+.dodontcss { margin-top:7px; margin-bottom:30px; margin-right:7px; }
+.gmapPosition { margin-top:7px; margin-bottom:30px; }
+.textPos { margin-top:7px; margin-bottom:5px; }
+.CorOffers { font-size:medium; }
+.serviceOffer { line-height:20px; }

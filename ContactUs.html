@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head id="Head1"><title>
+	Contact Us : Teethzz.com
+</title><link href="Contact%20Us%20_%20Teethzz.com_files/teethzz0.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Contact%20Us%20_%20Teethzz.com_files/jquery-1.js"></script>
+    <script type="text/javascript">
+
+    /*** 
+        Simple jQuery Slideshow Script
+        Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+    ***/
+
+    function slideSwitch() {
+        var $active = $('#slideshow IMG.active');
+
+        if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+        // use this to pull the images in the order they appear in the markup
+        var $next =  $active.next().length ? $active.next()
+            : $('#slideshow IMG:first');
+
+        // uncomment the 3 lines below to pull the images in random order
+        
+        // var $sibs  = $active.siblings();
+        // var rndNum = Math.floor(Math.random() * $sibs.length );
+        // var $next  = $( $sibs[ rndNum ] );
+
+
+        $active.addClass('last-active');
+
+        $next.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                $active.removeClass('active last-active');
+            });
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+
+    </script>
+
+    <style type="text/css">
+
+    /*** set the width and height to match your images **/
+
+    #slideshow {
+        position:relative;
+        height:350px;
+    }
+
+    #slideshow IMG {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:8;
+        opacity:0.0;
+    }
+
+    #slideshow IMG.active {
+        z-index:10;
+        opacity:1.0;
+    }
+
+    #slideshow IMG.last-active {
+        z-index:9;
+    }
+    .style2
+        {
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="ContactUs.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5NTk1NzY1ODlkZDIlYkMhyZvApJEimoWM6Ok6T7bu">
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBgLNk533BwLEhISFCwKE8/26DAKkoqnnCwLD2rShAgLCi9reA1n6/FhTJqjLTHOWyye+UMC9waGR">
+    <center>
+        <div class="header">
+            <table cellpadding="0" cellspacing="0" border="0" width="1000px">
+                <tr>
+                    <td rowspan="2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td rowspan="2">
+                        <a href="Default.html"><img style="border:0px;" alt="Teethzz" title="Teethzz" src="Contact%20Us%20_%20Teethzz.com_files/logo0000.gif"></a>
+                    </td>
+                    <td valign="top" align="right">
+                    <table cellpadding="6" cellspacing="6" border="0"><tr><td><a href="Login.html">Login</a> | <a href="ContactUs.html#">Register</a></td></tr></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td class="address">
+                                                208, Sterling Center, Above Barista Cafe,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Opp. Hotel Aurora Towers, M.G. Road, Camp,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Pune-411001.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+                                                <img alt="Call Us" title="Call Us" src="Contact%20Us%20_%20Teethzz.com_files/tel00000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                020-26054010
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                9049455871, 9423637534
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img alt="Send Mail" title="Send Mail" src="Contact%20Us%20_%20Teethzz.com_files/email000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                <a href="mailto:care@teethzz.com">care@teethzz.com</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td colspan="3">
+                                    
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td><a href="AboutUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">About Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Treatments.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Treatments</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="ContactUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" style="color:Black; text-decoration:underline;">Contact Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Sitemap.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Sitemap</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    </tr>
+                                    </table>
+                                    
+                                    </td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="midLayer">
+        <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td valign="top"><div class="leftPan">
+                <div class="menuLeft">
+                </div>
+                <div class="menuMid">
+                    <span class="cssMenu">Menu</span></div>
+                <div class="menuRight">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Contact%20Us%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CorporateOffers.html" class="blueheading">Corporate Offers</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Contact%20Us%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="DoDont.html" class="blueheading">Do &amp; Don't</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Contact%20Us%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="FAQ.html" class="blueheading">FAQ</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Contact%20Us%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Selfcare.html" class="blueheading">Self-Care</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Contact%20Us%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Research.html" class="blueheading">Research</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Contact%20Us%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CaseStudy.html" class="blueheading">Case Study</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="reqAppointment">
+                    <a href="ContactUs.html#"><img alt="Request an Appointment" style="border:0px;" title="Request an Appointment" src="Contact%20Us%20_%20Teethzz.com_files/reqApp00.png"></a></div>
+                <div class="testimonialTop">
+                    <img src="Contact%20Us%20_%20Teethzz.com_files/testimoo.png"></div>
+                <div class="testimonialMid">
+                    <div class="testimonialCss">Testimonials</div>
+                    <div class="testimonialContent">The Dental Care is On a Very High Level, I Am Pleasantly Surprised By The Quality Of Work, The Clinic Is Very Clean And Modern.</div>
+                    <div class="testimonialBy">- Rubina Shaikh, Pune</div>
+                    
+                    <div class="testimonialContent">The Treatment Was Very Professional, Fast And I Was Very Happy With it. His Work Is Very Good, Enviroment is Clean, He Is A Very Helpful &amp; Diligent Dentist.</div>
+                    <div class="testimonialBy">- Vivek, Tech Mahihindra, Pune</div>
+                    
+                    <div class="testimonialContent">Very Nice, Sweet And Meditating Dentist. Beautiful explanations &amp; clarifications and very soft hand.</div>
+                    <div class="testimonialBy">- Rowshan Sudabi, Iran</div>
+                </div>
+                <div class="testimonialBtm">
+                    <img src="Contact%20Us%20_%20Teethzz.com_files/testimop.png"></div>
+            </div></td>
+        <td valign="top">
+            
+            <div class="imgContactUs"><img alt="" src="Contact%20Us%20_%20Teethzz.com_files/contact_.png" style="width: 775px; height: 132px">
+                
+                <div class="googleMap">
+                
+                
+                
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                <td valign="top"><div class="headerText">Contact Us</div><div class="textPos">Incase of any query or if you are looking for an appointment then please feel free to write us.</div>
+                <table cellpadding="6" cellspacing="3" border="0" width="100%">
+                    <tr><td valign="top">Name&nbsp;<span style="color:Red;">*</span></td>
+                    <td><input name="txtName" type="text" id="txtName"><br>
+                    
+                    </td>
+                    </tr>
+                    <tr><td valign="top">Email ID&nbsp;<span style="color:Red;">*</span></td>
+                    <td><input name="txtEmail" type="text" id="txtEmail"><br>
+                    
+                    
+                    </td>
+                    </tr>
+                    <tr><td valign="top">Phone No.&nbsp;<span style="color:Red;">*</span></td>
+                    <td><input name="txtPhoneNo" type="text" id="txtPhoneNo"><br>
+                    
+                    </td>
+                    </tr>
+                    <tr>
+                    <td valign="top">Query&nbsp;<span style="color:Red;">*</span></td>
+                    <td><textarea name="txtQuery" rows="2" cols="20" id="txtQuery"></textarea><br>
+                    
+                    </td>
+                    </tr>
+                    <tr><td colspan="2"><input type="submit" name="btnSubmit" value="Submit Query" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnSubmit"></td></tr>
+                    </table>
+                </td>
+                <td class="subhtext" style="width:425px;" valign="top" rowspan="2">Location Map<br>
+                    
+                    <div class="gmapPosition"><iframe width="418" height="475" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="Contact%20Us%20_%20Teethzz.com_files/maps0000.htm"></iframe><br><small><a href="http://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Hotel+Aurora+near+M.G.+Road,+Camp,+Pune,+Maharashtra&amp;aq=4&amp;sll=18.51172,73.879012&amp;sspn=0.005331,0.010525&amp;vpsrc=0&amp;ie=UTF8&amp;hq=Hotel+Aurora&amp;hnear=M.G.+Rd,+Pune,+Maharashtra&amp;ll=18.517922,73.878785&amp;spn=0.010783,0.006295&amp;t=m" style="color:#0000FF;text-align:left">View Larger Map</a></small></div></td>
+                </tr>
+                </table>
+                
+                </div>
+                
+                </div>
+                
+                
+                
+                </td>
+        </tr>
+        
+        </table>
+            
+            
+        </div>
+        <div class="footer">
+            <a href="ContactUs.html#">HOME</a> <span class="horLine">|</span> <a href="ContactUs.html#">ABOUT US</a> <span class="horLine">|</span> <a href="ContactUs.html#">PRIVACY</a> <span class="horLine">|</span>
+            <a href="ContactUs.html#">FAQ</a> <span class="horLine">|</span> <a href="ContactUs.html#">CONTACT US</a><br>
+            Copy Rights 2011. All Rights Reserved.
+        </div>
+    </center>
+    </form>
+</body>
+</html>
+
+
+
+<!-- This document saved from ContactUs.html -->

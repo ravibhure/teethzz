@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head id="Head1"><title>
+	Case Study : Teethzz.com
+</title><link href="Case%20Study%20_%20Teethzz.com_files/teethzz0.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Case%20Study%20_%20Teethzz.com_files/jquery-1.js"></script>
+    <script type="text/javascript">
+
+    /*** 
+        Simple jQuery Slideshow Script
+        Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+    ***/
+
+    function slideSwitch() {
+        var $active = $('#slideshow IMG.active');
+
+        if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+        // use this to pull the images in the order they appear in the markup
+        var $next =  $active.next().length ? $active.next()
+            : $('#slideshow IMG:first');
+
+        // uncomment the 3 lines below to pull the images in random order
+        
+        // var $sibs  = $active.siblings();
+        // var rndNum = Math.floor(Math.random() * $sibs.length );
+        // var $next  = $( $sibs[ rndNum ] );
+
+
+        $active.addClass('last-active');
+
+        $next.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                $active.removeClass('active last-active');
+            });
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+
+    </script>
+
+    <style type="text/css">
+
+    /*** set the width and height to match your images **/
+
+    #slideshow {
+        position:relative;
+        height:350px;
+    }
+
+    #slideshow IMG {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:8;
+        opacity:0.0;
+    }
+
+    #slideshow IMG.active {
+        z-index:10;
+        opacity:1.0;
+    }
+
+    #slideshow IMG.last-active {
+        z-index:9;
+    }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="CaseStudy.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjM3MDgxODEzZGTcm2RIpMHzpUWpmzXrFPLEgigBGg==">
+
+    <center>
+        <div class="header">
+            <table cellpadding="0" cellspacing="0" border="0" width="1000px">
+                <tr>
+                    <td rowspan="2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td rowspan="2">
+                        <a href="Default.html"><img style="border:0px;" alt="Teethzz" title="Teethzz" src="Case%20Study%20_%20Teethzz.com_files/logo0000.gif"></a>
+                    </td>
+                    <td valign="top" align="right">
+                    <table cellpadding="6" cellspacing="6" border="0"><tr><td><a href="Login.html">Login</a> | <a href="CaseStudy.html#">Register</a></td></tr></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td class="address">
+                                                208, Sterling Center, Above Barista Cafe,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Opp. Hotel Aurora Towers, M.G. Road, Camp,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Pune-411001.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+                                                <img alt="Call Us" title="Call Us" src="Case%20Study%20_%20Teethzz.com_files/tel00000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                020-26054010
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                9049455871, 9423637534
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img alt="Send Mail" title="Send Mail" src="Case%20Study%20_%20Teethzz.com_files/email000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                <a href="mailto:care@teethzz.com">care@teethzz.com</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td colspan="3">
+                                    
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td><a href="AboutUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">About Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Treatments.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Treatments</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="ContactUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Contact Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Sitemap.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Sitemap</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    </tr>
+                                    </table>
+                                    
+                                    </td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="midLayer">
+        <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td><div class="leftPan">
+                <div class="menuLeft">
+                </div>
+                <div class="menuMid">
+                    <span class="cssMenu">Menu</span></div>
+                <div class="menuRight">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Case%20Study%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CorporateOffers.html" class="blueheading">Corporate Offers</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Case%20Study%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="DoDont.html" class="blueheading">Do &amp; Don't</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Case%20Study%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="FAQ.html" class="blueheading">FAQ</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Case%20Study%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Selfcare.html" class="blueheading">Self-Care</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Case%20Study%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Research.html" class="blueheading">Research</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Case%20Study%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CaseStudy.html" style="color:#FB7D4B; font-weight:bold; text-decoration:underline;">Case Study</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="reqAppointment">
+                    <a href="CaseStudy.html#"><img alt="Request an Appointment" style="border:0px;" title="Request an Appointment" src="Case%20Study%20_%20Teethzz.com_files/reqApp00.png"></a></div>
+                <div class="testimonialTop">
+                    <img src="Case%20Study%20_%20Teethzz.com_files/testimoo.png"></div>
+                <div class="testimonialMid">
+                    <div class="testimonialCss">Testimonials</div>
+                    <div class="testimonialContent">The Dental Care is On a Very High Level, I Am Pleasantly Surprised By The Quality Of Work, The Clinic Is Very Clean And Modern.</div>
+                    <div class="testimonialBy">- Rubina Shaikh, Pune</div>
+                    
+                    <div class="testimonialContent">The Treatment Was Very Professional, Fast And I Was Very Happy With it. His Work Is Very Good, Enviroment is Clean, He Is A Very Helpful &amp; Diligent Dentist.</div>
+                    <div class="testimonialBy">- Vivek, Tech Mahihindra, Pune</div>
+                    
+                    <div class="testimonialContent">Very Nice, Sweet And Meditating Dentist. Beautiful explanations &amp; clarifications and very soft hand.</div>
+                    <div class="testimonialBy">- Rowshan Sudabi, Iran</div>
+                </div>
+                <div class="testimonialBtm">
+                    <img src="Case%20Study%20_%20Teethzz.com_files/testimop.png"></div>
+            </div></td>
+        <td valign="top">
+            
+            </td>
+        </tr>
+        
+        </table>
+            
+            
+        </div>
+        <div class="footer">
+            <a href="CaseStudy.html#">HOME</a> <span class="horLine">|</span> <a href="CaseStudy.html#">ABOUT US</a> <span class="horLine">|</span> <a href="CaseStudy.html#">PRIVACY</a> <span class="horLine">|</span>
+            <a href="CaseStudy.html#">FAQ</a> <span class="horLine">|</span> <a href="CaseStudy.html#">CONTACT US</a><br>
+            Copy Rights 2011. All Rights Reserved.
+        </div>
+    </center>
+    </form>
+</body>
+</html>
+
+
+<!-- This document saved from CaseStudy.html -->

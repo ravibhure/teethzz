@@ -1,0 +1,435 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head id="Head1"><title>
+	Do &amp; Don't : Teethzz.com
+</title><link href="Do%20%26%20Don%27t%20_%20Teethzz.com_files/teethzz0.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/jquery-1.js"></script>
+    <script type="text/javascript">
+
+    /*** 
+        Simple jQuery Slideshow Script
+        Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+    ***/
+
+    function slideSwitch() {
+        var $active = $('#slideshow IMG.active');
+
+        if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+        // use this to pull the images in the order they appear in the markup
+        var $next =  $active.next().length ? $active.next()
+            : $('#slideshow IMG:first');
+
+        // uncomment the 3 lines below to pull the images in random order
+        
+        // var $sibs  = $active.siblings();
+        // var rndNum = Math.floor(Math.random() * $sibs.length );
+        // var $next  = $( $sibs[ rndNum ] );
+
+
+        $active.addClass('last-active');
+
+        $next.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                $active.removeClass('active last-active');
+            });
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+
+    </script>
+
+    <style type="text/css">
+
+    /*** set the width and height to match your images **/
+
+    #slideshow {
+        position:relative;
+        height:350px;
+    }
+
+    #slideshow IMG {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:8;
+        opacity:0.0;
+    }
+
+    #slideshow IMG.active {
+        z-index:10;
+        opacity:1.0;
+    }
+
+    #slideshow IMG.last-active {
+        z-index:9;
+    }
+    
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="DoDont.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjM3MDgxODEzZGSCVByP0whbvsTWT54BmfVeqkhY3g==">
+
+    <center>
+        <div class="header">
+            <table cellpadding="0" cellspacing="0" border="0" width="1000px">
+                <tr>
+                    <td rowspan="2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td rowspan="2">
+                        <a href="Default.html"><img style="border:0px;" alt="Teethzz" title="Teethzz" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/logo0000.gif"></a>
+                    </td>
+                    <td valign="top" align="right">
+                    <table cellpadding="6" cellspacing="6" border="0"><tr><td><a href="Login.html">Login</a> | <a href="DoDont.html#">Register</a></td></tr></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td class="address">
+                                                208, Sterling Center, Above Barista Cafe,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Opp. Hotel Aurora Towers, M.G. Road, Camp,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Pune-411001.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+                                                <img alt="Call Us" title="Call Us" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/tel00000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                020-26054010
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                9049455871, 9423637534
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img alt="Send Mail" title="Send Mail" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/email000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                <a href="mailto:care@teethzz.com">care@teethzz.com</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td colspan="3">
+                                    
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td><a href="AboutUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">About Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Treatments.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Treatments</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="ContactUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Contact Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Sitemap.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Sitemap</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    </tr>
+                                    </table>
+                                    
+                                    </td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="midLayer">
+        <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td valign="top"><div class="leftPan">
+                <div class="menuLeft">
+                </div>
+                <div class="menuMid">
+                    <span class="cssMenu">Menu</span></div>
+                <div class="menuRight">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CorporateOffers.html" class="blueheading">Corporate Offers</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="DoDont.html" style="color:#FB7D4B; font-weight:bold; text-decoration:underline;">Do &amp; Don't</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="FAQ.html" class="blueheading">FAQ</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Selfcare.html" class="blueheading">Self-Care</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Research.html" class="blueheading">Research</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CaseStudy.html" class="blueheading">Case Study</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="reqAppointment">
+                    <a href="DoDont.html#"><img alt="Request an Appointment" style="border:0px;" title="Request an Appointment" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/reqApp00.png"></a></div>
+                <div class="testimonialTop">
+                    <img src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/testimoo.png"></div>
+                <div class="testimonialMid">
+                    <div class="testimonialCss">Testimonials</div>
+                    <div class="testimonialContent">The Dental Care is On a Very High Level, I Am Pleasantly Surprised By The Quality Of Work, The Clinic Is Very Clean And Modern.</div>
+                    <div class="testimonialBy">- Rubina Shaikh, Pune</div>
+                    
+                    <div class="testimonialContent">The Treatment Was Very Professional, Fast And I Was Very Happy With it. His Work Is Very Good, Enviroment is Clean, He Is A Very Helpful &amp; Diligent Dentist.</div>
+                    <div class="testimonialBy">- Vivek, Tech Mahihindra, Pune</div>
+                    
+                    <div class="testimonialContent">Very Nice, Sweet And Meditating Dentist. Beautiful explanations &amp; clarifications and very soft hand.</div>
+                    <div class="testimonialBy">- Rowshan Sudabi, Iran</div>
+                </div>
+                <div class="testimonialBtm">
+                    <img src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/testimop.png"></div>
+            </div></td>
+        <td valign="top">
+            
+        <div class="dodontcss">    
+        <div class="headerText">Do &amp; Don't</div>
+        <table cellpadding="0" cellspacing="0" border="0"><tr><td>Just like with most things, never take advantage of your dental health and beautiful smile. It's important to maintain good and consistent dental hygiene. To do this, you must make a couple short and simple sacrifices, as well as be willing to commit time to your dental health each and every day.
+        <br><br>
+        The first and possibly most important step is to brush your teeth twice a day. If possible, try to work towards brushing them after each and every meal. Be sure to find toothpaste that contains fluoride, as fluoride helps maintain your tooth structure, and protects your teeth from current and potential decay. Also, make sure you use a soft-bristled toothbrush, which gently protects your gums without being too hard on them. Contrary to how most people brush, it is important to brush up-and-down, not back-and forth. Always brush for about two minutes, never too harshly. Also, don't forget to brush your tongue!
+        </td>
+        <td valign="top">
+            <img src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/teeth-ap.gif"></td>
+        </tr></table>
+        <br>
+        Brushing your tongue scrapes off leftover food particles, and improves the smell of your mouth. Be sure to replace your toothbrush every three to four months, or once your brush bristles become dull- whichever comes first.
+        <br><br>
+        While it's an important tool, a toothbrush can't possibly reach every nook and cranny in your mouth. Plenty of gunk can build up between your teeth, as well as envelope under your gums, thus causing plaque to build up. It can also lead to gingivitis or halitosis of the mouth- not to mention painful cavities. You don't have to floss as often as you brush, once a day is more than adequate. When you do, be gentle, and ease the floss between each and every tooth. Wrap the floss around both your index fingers, and pull it back and forth so as to scrape the base of your teeth. Floss holders are available, as are disposable "plackers" which work best for tight teeth. If you find that your gums bleed, don't be concerned. So long as you keep flossing consistently, your gums with toughen up, and stop bleeding when flossed.
+        <br><br>
+        There are several times when you should contact your dentist. If your gums bleed, and don't seem to be recovering, go ahead and let your doctor know. Extreme hot and cold sensation could indicate a problem as well. Also, changes in your tooth structure or quick crowding of your teeth are both things that a doctor should know.
+        <br><br>
+        It's important to see your dentist one to two times each year. A regular appointment entails a basic cleaning, and checkup. So long as you keep your appointments regular, there will rarely if ever be a problem with your dental health. Never fear a dentist- remember, they're here to keep you healthy!
+        <br><br>
+        The mouth is the gateway to the body... good health begins with good teeth. Tooth decay, infection and/or gum disease can lead to a variety of ailments and just generally 'feeling bad.' Here's a list of Do's and Don'ts for keeping your oral hygiene the best it can be:
+        <br><br>
+        <b><u>Oral Hygiene Do's</u></b>
+        <ul>
+        <li>Visit your dentist regularly for check-ups and cleaning.</li>
+        <li>Visit an orthodontist for an evaluation if you see any of the early warning signs of orthodontic problems.</li>
+        <li>Have your child(ren) evaluated by an orthodontist by age seven. Many orthodontic problems can be more easily corrected before tooth and facial growth is complete.</li>
+        <li>Brush your teeth at least twice a day using a soft-bristled toothbrush and a fluoride toothpaste.</li>
+        <li>Floss between your teeth at least once a day, after dinner and before bedtime. (Tip: Use toothpaste on your floss for extra fresh breath.)</li>
+        <li>Rinse and gargle with the mouthwash, ideally right before bedtime.</li>
+        <li>Eat a balanced diet, limit between-meal snacks and eliminate sugary foods.</li>
+        <li>Clean your tongue when your brush your teeth. (Tip: Instead of using toothpaste to brush your tongue, dip your toothbrush in mouthwash.)</li>
+        <li>Drink plenty of liquids, especially water to keep your mouth moist. (Tip: If your mouth is dry, try sucking in your cheeks as if eating something sour to increase flow from the salivary glands.)</li>
+        </ul>
+        <b><u>Oral Hygiene Don'ts</u></b>
+        <ul>
+        <li>Don't forget to clean behind your back teeth.</li>
+        <li>Don't give mouthwash or fluoride toothpaste to young children, as they can swallow it.</li>
+        <li>Don't clean your tongue so hard that it hurts.</li>
+        <li>Don't rely on mouthwash alone too keep your teeth and gums clean and your breath fresh. Practice complete oral hygiene.</li>
+        <li>Don't ignore your gums - you can lose your teeth as well as have bad breath.</li>
+        <li>Don't drink too much coffee.</li>
+        <li>Don't smoke.</li>
+        </ul>
+        For those wearing braces or other orthodontic appliances, keeping teeth and gums clean may be a bit more difficult, but the resulting smile will be worth the effort. If you wear braces...
+        <br><br>
+        <table cellpadding="0" cellspacing="0" border="0">
+        <tr><td valign="top">
+            <img src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/brush-te.png">
+        </td>
+        <td>&nbsp;</td>
+        <td>
+        <b><u>Braces Do's</u></b>
+        <ul>
+        <li>Brush after every meal. If you can't brush right away, rinse your mouth (and removable appliance) with water.</li>
+        <li>Floss every day. Your orthodontist can give you a floss threader if you're having difficulties.</li>
+        <li>Chew only sugarless gum.</li>
+        <li>Call your orthodontist if anything is loose or broken.</li>
+        </ul>
+        <b><u>Braces Don'ts</u></b>
+        <ul>
+        <li>Don't miss your orthodontic appointments. Missed or delayed appointments mean you'll have to wear your braces longer.</li>
+        <li>Don't eat hard, sticky or chewy foods, crunchy foods.</li>
+        <li>Don't chew on pens, pencils, ice, fingernails or anything that might break your braces.</li>
+        </ul>
+        </td>
+        </tr>
+        </table>
+        
+        Shiny clean teeth and fresh breath are good reasons for practicing good oral hygiene, but the most important reason is that keeping your gums and teeth clean and healthy will help you keep your teeth throughout your life. Although some diseases and conditions can make dental disease and tooth loss more likely, most of us have a great deal of control over whether we keep our teeth into old age. Wouldn't you rather be chewing with your own natural teeth?
+        <br><br>
+        <table cellpadding="0" cellspacing="0" border="0"><tr><td><img alt="" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/qusmark0.png" style="width: 20px; height: 20px"></td><td>&nbsp;</td><td><div style="color:#ff6333"><b><u>Dos and don'ts of choosing the right toothbrush</u></b></div></td></tr></table>
+        <br>
+        Confused by the toothbrush aisle? Follow these tips to choose the right toothbrush for your needs
+        <br><br>
+        How do you choose your toothbrush? Perhaps you have a steady fave bought out of habit, or maybe you’re always on the lookout for a sale, jumping from toothbrush to toothbrush when the price is right. Or you choose according to aesthetics, considering the handle’s colour before any other attributes. All of these strategies will get you a toothbrush, but none gets you the best one for the job. Brush up on the dos and don’ts of picking the right toothbrush.
+        <br><br>
+        <table cellpadding="0" cellspacing="0" border="0"><tr><td><img alt="" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/qusmark0.png" style="width: 20px; height: 20px"></td><td>&nbsp;</td><td><div style="color:#ff6333"><b><u>Do go for soft bristles</u></b></div></td></tr></table>
+        <br>
+        The Canadian Dental Association says to use a toothbrush with soft, rounded bristles. Go gently, too. You may have a penchant for scrubbing your teeth with a stiff-bristle toothbrush; however, this habit can be tough on teeth and gums. A survey of 700 dentists found that brushing teeth too hard was a leading cause of sensitive teeth, reports WebMD.
+        <br><br>
+        <table cellpadding="0" cellspacing="0" border="0"><tr><td><img alt="" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/qusmark0.png" style="width: 20px; height: 20px"></td><td>&nbsp;</td><td><div style="color:#ff6333"><b><u>Do find the right toothbrush head</u></b></div></td></tr></table>
+        <br>
+        Consider the toothbrush’s head shape when selecting your tool of choice. Some toothbrush shapes will suit some mouths better than others. Make sure that your toothbrush bristles comfortably reach your backmost molars, as some brushes may be too large or wide. Try flossing and brushing in front of the mirror to make sure you cover every tooth, which is also a good way of visually checking that your toothbrush head is indeed reaching every surface. If it doesn’t, swap it for one that does.
+        <br><br>
+        <table cellpadding="0" cellspacing="0" border="0"><tr><td><img alt="" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/qusmark0.png" style="width: 20px; height: 20px"></td><td>&nbsp;</td><td><div style="color:#ff6333"><b><u>Don’t buy no-name dollar-store toothbrushes</u></b></div></td></tr></table>
+        <br>
+        Five no-name toothbrushes in a package may seem like a steal at a handful of pennies each, but consider the risks. The product could be from a manufacturer who doesn't care about safety or efficacy. The toothbrushes could be made of inferior or even unsafe materials. Seeing as you put a toothbrush in your mouth two or more times per day, it’s worth going with a reputable manufacturer. Leave the cheap ones on the shelf; they’re better suited for cleaning grout than oral hygiene.
+        <br><br>
+        <table cellpadding="0" cellspacing="0" border="0"><tr><td><img alt="" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/qusmark0.png" style="width: 20px; height: 20px"></td><td>&nbsp;</td><td><div style="color:#ff6333"><b><u>Do get the right-size toothbrush for younger family members</u></b></div></td></tr></table>
+        <br>
+        Babies need baby toothbrushes because of their tiny mouths, so it also stands to reason that small children need toothbrushes with smaller heads than adult versions. Instead of promising a small toy or sugary treat to reward good behaviour at the supermarket or drugstore, let kids choose a new toothbrush with fun colours and graphics from the oral hygiene aisle. And don’t forget to replace their toothbrushes every three months when you replace your own, or possibly more often if they are hard on their brushes.
+        <br><br>
+        <table cellpadding="0" cellspacing="0" border="0"><tr><td><img alt="" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/qusmark0.png" style="width: 20px; height: 20px"></td><td>&nbsp;</td><td><div style="color:#ff6333"><b><u>Don’t be reluctant to try powered toothbrushes</u></b></div></td></tr></table>
+        <br>
+        You might be a diehard manual toothbrush user, but if you’re not brushing as long or as thoroughly as you used to for reasons ranging from injury to arthritis, consider switching. “Both manual and powered toothbrushes can effectively and thoroughly clean teeth,” says an article in the Journal of American Dentistry. “People who have difficulty using a manual toothbrush may find a powered toothbrush easier or more comfortable to use.” Kids who have developed an aversion to oral hygiene might be persuaded to brush up with a fun new powered model, as well.
+        <br><br>
+        <table cellpadding="0" cellspacing="0" border="0"><tr><td><img alt="" src="Do%20%26%20Don%27t%20_%20Teethzz.com_files/qusmark0.png" style="width: 20px; height: 20px"></td><td>&nbsp;</td><td><div style="color:#ff6333"><b><u>Do remember the basics</u></b></div></td></tr></table>
+        <br>
+        At the end of the day, the best toothbrush is the one you’ll actually use. That means the toothbrush handle should fit comfortably in your hand and the toothbrush head should feel comfortable in your mouth and be able to reach every tooth surface. And if you can’t remember the last time you changed your toothbrush, it’s probably time for a new one.
+
+        </div>
+            
+            </td>
+        </tr>
+        
+        </table>
+            
+            
+        </div>
+        <div class="footer">
+            <a href="DoDont.html#">HOME</a> <span class="horLine">|</span> <a href="DoDont.html#">ABOUT US</a> <span class="horLine">|</span> <a href="DoDont.html#">PRIVACY</a> <span class="horLine">|</span>
+            <a href="DoDont.html#">FAQ</a> <span class="horLine">|</span> <a href="DoDont.html#">CONTACT US</a><br>
+            Copy Rights 2011. All Rights Reserved.
+        </div>
+    </center>
+    </form>
+</body>
+</html>
+
+
+
+<!-- This document saved from DoDont.html -->

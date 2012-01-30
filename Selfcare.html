@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head id="Head1"><title>
+	Selfcare : Teethzz.com
+</title><link href="Selfcare%20_%20Teethzz.com_files/teethzz0.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="Selfcare%20_%20Teethzz.com_files/jquery-1.js"></script>
+    <script type="text/javascript">
+
+    /*** 
+        Simple jQuery Slideshow Script
+        Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+    ***/
+
+    function slideSwitch() {
+        var $active = $('#slideshow IMG.active');
+
+        if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+        // use this to pull the images in the order they appear in the markup
+        var $next =  $active.next().length ? $active.next()
+            : $('#slideshow IMG:first');
+
+        // uncomment the 3 lines below to pull the images in random order
+        
+        // var $sibs  = $active.siblings();
+        // var rndNum = Math.floor(Math.random() * $sibs.length );
+        // var $next  = $( $sibs[ rndNum ] );
+
+
+        $active.addClass('last-active');
+
+        $next.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                $active.removeClass('active last-active');
+            });
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+
+    </script>
+
+    <style type="text/css">
+
+    /*** set the width and height to match your images **/
+
+    #slideshow {
+        position:relative;
+        height:350px;
+    }
+
+    #slideshow IMG {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:8;
+        opacity:0.0;
+    }
+
+    #slideshow IMG.active {
+        z-index:10;
+        opacity:1.0;
+    }
+
+    #slideshow IMG.last-active {
+        z-index:9;
+    }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="Selfcare.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjM3MDgxODEzZGSYCtuoTOZ1DStxRn2jRNd9tNqXaA==">
+
+    <center>
+        <div class="header">
+            <table cellpadding="0" cellspacing="0" border="0" width="1000px">
+                <tr>
+                    <td rowspan="2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td rowspan="2">
+                        <a href="Default.html"><img style="border:0px;" alt="Teethzz" title="Teethzz" src="Selfcare%20_%20Teethzz.com_files/logo0000.gif"></a>
+                    </td>
+                    <td valign="top" align="right">
+                    <table cellpadding="6" cellspacing="6" border="0"><tr><td><a href="Login.html">Login</a> | <a href="Selfcare.html#">Register</a></td></tr></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td class="address">
+                                                208, Sterling Center, Above Barista Cafe,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Opp. Hotel Aurora Towers, M.G. Road, Camp,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Pune-411001.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+                                                <img alt="Call Us" title="Call Us" src="Selfcare%20_%20Teethzz.com_files/tel00000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                020-26054010
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                9049455871, 9423637534
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img alt="Send Mail" title="Send Mail" src="Selfcare%20_%20Teethzz.com_files/email000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                <a href="mailto:care@teethzz.com">care@teethzz.com</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td colspan="3">
+                                    
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td><a href="AboutUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">About Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Treatments.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Treatments</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="ContactUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Contact Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Sitemap.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Sitemap</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    </tr>
+                                    </table>
+                                    
+                                    </td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="midLayer">
+        <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td valign="top"><div class="leftPan">
+                <div class="menuLeft">
+                </div>
+                <div class="menuMid">
+                    <span class="cssMenu">Menu</span></div>
+                <div class="menuRight">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Selfcare%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CorporateOffers.html" class="blueheading">Corporate Offers</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Selfcare%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="DoDont.html" class="blueheading">Do &amp; Don't</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Selfcare%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="FAQ.html" class="blueheading">FAQ</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Selfcare%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Selfcare.html" style="color:#FB7D4B; font-weight:bold; text-decoration:underline;">Self-Care</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Selfcare%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Research.html" class="blueheading">Research</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="Selfcare%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CaseStudy.html" class="blueheading">Case Study</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="reqAppointment">
+                    <a href="Selfcare.html#"><img alt="Request an Appointment" style="border:0px;" title="Request an Appointment" src="Selfcare%20_%20Teethzz.com_files/reqApp00.png"></a></div>
+                <div class="testimonialTop">
+                    <img src="Selfcare%20_%20Teethzz.com_files/testimoo.png"></div>
+                <div class="testimonialMid">
+                    <div class="testimonialCss">Testimonials</div>
+                    <div class="testimonialContent">The Dental Care is On a Very High Level, I Am Pleasantly Surprised By The Quality Of Work, The Clinic Is Very Clean And Modern.</div>
+                    <div class="testimonialBy">- Rubina Shaikh, Pune</div>
+                    
+                    <div class="testimonialContent">The Treatment Was Very Professional, Fast And I Was Very Happy With it. His Work Is Very Good, Enviroment is Clean, He Is A Very Helpful &amp; Diligent Dentist.</div>
+                    <div class="testimonialBy">- Vivek, Tech Mahihindra, Pune</div>
+                    
+                    <div class="testimonialContent">Very Nice, Sweet And Meditating Dentist. Beautiful explanations &amp; clarifications and very soft hand.</div>
+                    <div class="testimonialBy">- Rowshan Sudabi, Iran</div>
+                </div>
+                <div class="testimonialBtm">
+                    <img src="Selfcare%20_%20Teethzz.com_files/testimop.png"></div>
+            </div></td>
+            <td valign="top">
+            
+            <div class="dodontcss">    
+        <div class="headerText">Self-Care</div>
+        
+        <div style="color:blue"><b><u>How can I best care for my child's teeth?</u></b></div>
+        Good dental hygiene habits should begin before your child's first tooth comes in. Wiping your baby's gums with a soft damp cloth after feedings helps to prevent the buildup of bacteria. When teeth appear, start using a soft children's toothbrush twice a day.
+        <br><br>
+        Once your child is preschool-age, start using fluoride toothpaste. Don't cover the brush with toothpaste; a pea-sized amount is just right (see picture above). Young children tend to swallow most of the toothpaste, and swallowing too much fluoride toothpaste can cause permanent stains on their teeth.
+        <br><br>
+        <a href="Selfcare.html#">Return to top</a>
+        <br><br>
+        <div style="color:blue"><b><u>What about using fluoride tablets?</u></b></div>
+        Fluoride helps make teeth strong by hardening the tooth enamel. Many cities are required to add fluoride to tap water. If you live in an area where the tap water doesn't contain fluoride, your doctor may prescribe daily fluoride tablets when your child is about 6 months old. Fluoride is an important part of your child's dental health, but don't give him or her more than the directions call for. If you miss a dose, don't give your child extra fluoride to make up. Just as with swallowed toothpaste, too much oral fluoride can cause stains on your child's teeth.
+        <br><br>
+        <a href="Selfcare.html#">Return to top</a>
+        <br><br>
+        <div style="color:blue"><b><u>What are cavities?</u></b></div>
+        Cavities are holes that are formed when bacteria (germs) in your mouth use the sugar in food to make acid. This acid eats away at the teeth. Cavities are common in children. Good tooth care can keep cavities from happening in your child.
+        <br><br>
+        <a href="Selfcare.html#">Return to top</a>
+        <br><br>
+        <div style="color:blue"><b><u>Is my child at risk for cavities?</u></b></div>
+        Your child might be at risk for cavities if he or she eats a lot of sugary foods (such as raisins, cookies and candy) and drinks a lot of sweet liquids (such as fruit juice and punch, soda and sweetened drinks). Your child also might be at risk if he or she has any of the following risk factors:
+        <br>â€¢	Was born early (prematurely) or weighed very little at birth (low birth weight)
+        <br>â€¢	Has ongoing special health care needs
+        <br>â€¢	Has white spots or brown areas on any teeth
+        <br>â€¢	Does not go to the dentist very often
+        <br><br>
+        <a href="Selfcare.html#">Return to top</a>
+        <br><br>
+        <div style="color:blue"><b><u>How can I help stop cavities?</u></b></div>
+        Everyone in your family should take good care of their teeth. Family members with lots of cavities can pass the cavity-causing bacteria to babies and children.
+        <br><br>
+        Teeth should be brushed at least twice a day and adults should floss once a day. Everyone should see the dentist twice a year. Have your doctor or dentist show you the right way to brush your child's teeth.
+        <br><br>
+        <a href="Selfcare.html#">Return to top</a>
+        <br><br>
+        
+        <div style="color:blue"><b><u>Does diet affect my child's teeth?</u></b></div>
+        Yes. Avoiding sweets, sticky foods and between-meal snacks is good advice. To avoid cavities, limit sweet snacks and drinks between meals. Have meals and snacks at regular times. Teeth-friendly snacks include fresh fruits and vegetables, and cheese and crackers.
+        <br><br>
+        Baby bottles can create additional problems with your child's dental health. When liquid from a bottle--like milk and juice--stays in contact with the teeth for a long time, the sugars cause tooth decay. This can create a condition called bottle mouth. Your baby's teeth can develop cavities and become pitted or discolored. Never put a baby to bed with a bottle. Don't let your child walk around during the day with a bottle, and teach your child to use a drinking cup around his or her first birthday.
+        <br><br>
+        <a href="Selfcare.html#">Return to top</a>
+        <br><br>
+        
+        <div style="color:blue"><b><u>Is thumb-sucking bad for my child?</u></b></div>
+        It's normal for children to suck their thumbs, their fingers or a pacifier. Most children give up this habit on their own by age 4, with no harm done to their teeth. If your child still has a sucking habit after age 4, tell your dentist. Your dentist can watch carefully for any problems as the teeth develop. In most children there is no reason to worry about a sucking habit until around age 6, when the permanent front teeth come in.
+        <br><br>
+        <a href="Selfcare.html#">Return to top</a>
+        <br><br>
+
+        <div style="color:blue"><b><u>When should I start taking my child to the dentist?</u></b></div>
+        The American Dental Association recommends that parents take their child to a dentist no later than his or her first birthday. This gives the dentist a chance to look for early problems with your child's teeth. Pediatric dentists specialize in treating children's dental health. You and your child's dentist should review important information about diet, bottles, tooth brushing and fluoride use. Visiting the dentist from a young age will help your child become comfortable with his or her dentist. It also establishes the good habit of regular dental check-ups.
+        <br><br>
+        <a href="Selfcare.html#">Return to top</a>
+        <br><br>
+
+        </div>    
+                    
+        </td>
+        </tr>
+        
+        </table>
+            
+            
+        </div>
+        <div class="footer">
+            <a href="Selfcare.html#">HOME</a> <span class="horLine">|</span> <a href="Selfcare.html#">ABOUT US</a> <span class="horLine">|</span> <a href="Selfcare.html#">PRIVACY</a> <span class="horLine">|</span>
+            <a href="Selfcare.html#">FAQ</a> <span class="horLine">|</span> <a href="Selfcare.html#">CONTACT US</a><br>
+            Copy Rights 2011. All Rights Reserved.
+        </div>
+    </center>
+    </form>
+</body>
+</html>
+
+
+<!-- This document saved from Selfcare.html -->

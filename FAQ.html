@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head id="Head1"><title>
+	FAQ : Teethzz.com
+</title><link href="FAQ%20_%20Teethzz.com_files/teethzz0.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="FAQ%20_%20Teethzz.com_files/jquery-1.js"></script>
+    <script type="text/javascript">
+
+    /*** 
+        Simple jQuery Slideshow Script
+        Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+    ***/
+
+    function slideSwitch() {
+        var $active = $('#slideshow IMG.active');
+
+        if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+        // use this to pull the images in the order they appear in the markup
+        var $next =  $active.next().length ? $active.next()
+            : $('#slideshow IMG:first');
+
+        // uncomment the 3 lines below to pull the images in random order
+        
+        // var $sibs  = $active.siblings();
+        // var rndNum = Math.floor(Math.random() * $sibs.length );
+        // var $next  = $( $sibs[ rndNum ] );
+
+
+        $active.addClass('last-active');
+
+        $next.css({opacity: 0.0})
+            .addClass('active')
+            .animate({opacity: 1.0}, 1000, function() {
+                $active.removeClass('active last-active');
+            });
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+
+    </script>
+
+    <style type="text/css">
+
+    /*** set the width and height to match your images **/
+
+    #slideshow {
+        position:relative;
+        height:350px;
+    }
+
+    #slideshow IMG {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:8;
+        opacity:0.0;
+    }
+
+    #slideshow IMG.active {
+        z-index:10;
+        opacity:1.0;
+    }
+
+    #slideshow IMG.last-active {
+        z-index:9;
+    }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="FAQ.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjM3MDgxODEzZGTQH8i70MB5VlKFNWVWquV3wYexBQ==">
+
+    <center>
+        <div class="header">
+            <table cellpadding="0" cellspacing="0" border="0" width="1000px">
+                <tr>
+                    <td rowspan="2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td rowspan="2">
+                        <a href="Default.html"><img style="border:0px;" alt="Teethzz" title="Teethzz" src="FAQ%20_%20Teethzz.com_files/logo0000.gif"></a>
+                    </td>
+                    <td valign="top" align="right">
+                    <table cellpadding="6" cellspacing="6" border="0"><tr><td><a href="Login.html">Login</a> | <a href="FAQ.html#">Register</a></td></tr></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td class="address">
+                                                208, Sterling Center, Above Barista Cafe,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Opp. Hotel Aurora Towers, M.G. Road, Camp,
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="address">
+                                                Pune-411001.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td>
+                                                <img alt="Call Us" title="Call Us" src="FAQ%20_%20Teethzz.com_files/tel00000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                020-26054010
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="address">
+                                                9049455871, 9423637534
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img alt="Send Mail" title="Send Mail" src="FAQ%20_%20Teethzz.com_files/email000.png">
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                <a href="mailto:care@teethzz.com">care@teethzz.com</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr><td>&nbsp;</td></tr>
+                            <tr>
+                                <td colspan="3">
+                                    
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td><a href="AboutUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">About Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Treatments.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Treatments</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="ContactUs.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Contact Us</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    <td>&nbsp;</td>
+                                    <td><a href="Sitemap.html"><div class="leftHMenu">
+                                    </div>
+                                    <div class="midHMenu">
+                                        <span class="cssMenu" onmouseover="this.style.textDecoration='underline'; return true;" onmouseout="this.style.textDecoration='none'; return true;">Sitemap</span></div>
+                                    <div class="rightHMenu">
+                                    </div></a></td>
+                                    </tr>
+                                    </table>
+                                    
+                                    </td>
+                            </tr>
+                            
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="midLayer">
+        <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td valign="top"><div class="leftPan">
+                <div class="menuLeft">
+                </div>
+                <div class="menuMid">
+                    <span class="cssMenu">Menu</span></div>
+                <div class="menuRight">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="FAQ%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CorporateOffers.html" class="blueheading">Corporate Offers</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="FAQ%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="DoDont.html" class="blueheading">Do &amp; Don't</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="FAQ%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="FAQ.html" style="color:#FB7D4B; font-weight:bold; text-decoration:underline;">FAQ</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="FAQ%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Selfcare.html" class="blueheading">Self-Care</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="FAQ%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="Research.html" class="blueheading">Research</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menuHorizontalBar">
+                </div>
+                <div id="menuBlk" class="cssMenuItem">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <img class="imgMenu" src="FAQ%20_%20Teethzz.com_files/teethzz0.png">
+                            </td>
+                            <td>
+                                <a href="CaseStudy.html" class="blueheading">Case Study</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="reqAppointment">
+                    <a href="FAQ.html#"><img alt="Request an Appointment" style="border:0px;" title="Request an Appointment" src="FAQ%20_%20Teethzz.com_files/reqApp00.png"></a></div>
+                <div class="testimonialTop">
+                    <img src="FAQ%20_%20Teethzz.com_files/testimoo.png"></div>
+                <div class="testimonialMid">
+                    <div class="testimonialCss">Testimonials</div>
+                    <div class="testimonialContent">The Dental Care is On a Very High Level, I Am Pleasantly Surprised By The Quality Of Work, The Clinic Is Very Clean And Modern.</div>
+                    <div class="testimonialBy">- Rubina Shaikh, Pune</div>
+                    
+                    <div class="testimonialContent">The Treatment Was Very Professional, Fast And I Was Very Happy With it. His Work Is Very Good, Enviroment is Clean, He Is A Very Helpful &amp; Diligent Dentist.</div>
+                    <div class="testimonialBy">- Vivek, Tech Mahihindra, Pune</div>
+                    
+                    <div class="testimonialContent">Very Nice, Sweet And Meditating Dentist. Beautiful explanations &amp; clarifications and very soft hand.</div>
+                    <div class="testimonialBy">- Rowshan Sudabi, Iran</div>
+                </div>
+                <div class="testimonialBtm">
+                    <img src="FAQ%20_%20Teethzz.com_files/testimop.png"></div>
+            </div></td>
+        <td valign="top">
+            
+            <div class="dodontcss">    
+        <div class="headerText">Frequently Asked Questions (FAQ)</div>
+        
+<div style="color:blue"><b><u>Are you missing a single tooth?</u></b></div>
+Missing a single tooth can, over time, allow the misalignment of your remaining teeth and thus erode your current smile. A single tooth replaced with a dental implant and crown is the most predictable, conservative and long-lasting method of tooth replacement. Without a dental implant, the two adjacent teeth to a missing tooth must be filed down to anchor a bridge. Dental implants eliminate the need to modify natural teeth. 
+<br><br>
+<div style="color:blue"><b><u>Are you missing Multiple teeth?</u></b></div>
+Missing multiple teeth can be a serious problem as the support structure of your jaw begins to deteriorate. Implants stop that deterioration.. Dental implants are designed to serve as a foundation for replacement crowns or bridges that "give you your teeth back." They look, feel, and function like natural teeth. In conjugation with dental implants, we can take support of some natural teeth to restore multiple missing teeth. although the ideal protocol is ONE TOOTH PER IMPLANT. 
+<br><br>
+<div style="color:blue"><b><u>Is the treatment painful?</u></b></div>
+The surgical placement of dental implants causes only minor discomfort similar to having a tooth removed. Post-operative discomfort is controlled with the use of prescriptions. Depending on the extent of the therapy, many persons return to work the day of their surgery. Most patients report that they were much more comfortable following the procedure than they had anticipated. 
+<br><br>
+<div style="color:blue"><b><u>What is an Implant?</u></b></div>
+A dental implant is a small "anchor" made of titanium. It is inserted into the jawbone to take the place of your missing tooth root. After osseointegration, or when the surrounding bone has attached to the implant, a replacement tooth is secured to the top of the implant. 
+<br><br>
+<div style="color:blue"><b><u>Will my new teeth look natural?</u></b></div>
+Your new teeth will look and feel like your natural teeth. 
+<br><br>
+<div style="color:blue"><b><u>Am I a good candidate for dental implants?</u></b></div>
+If you are healthy enough to have a tooth extracted, you are probably healthy enough to have an implant. General good health and adequate bone in the jaw are the key requirements. Anyone who is missing one or more teeth due to injury, disease or decay may be a candidate for dental implants. 
+<br><br>
+<div style="color:blue"><b><u>How successful is the procedure?</u></b></div>
+For more than three decades, dental implants have been used successfully with people just like you. Good oral hygiene is an important factor in insuring long lasting results from your implants. 
+<br><br>
+<div style="color:blue"><b><u>Is the procedure painful?</u></b></div>
+Anesthesia is used during the surgical procedure to eliminate any discomfort. Your doctor may prescribe pain medication for any discomfort after surgery. Most patients indicate that the discomfort is minimal once they arrive at home. Many feel great the next day and are able to return to work. 
+<br><br>
+<div style="color:blue"><b><u>How much will the treatment cost?</u></b></div>
+The cost will be determined by the number of implants that will be placed, the type of prosthesis recommended and your particular case. This can only be determined after a thorough examination by your dentist. 
+<br><br>
+<div style="color:blue"><b><u>Is tooth whitening safe?</u></b></div>
+Teeth whitening is a very safe procedure that simply involves using a peroxide-based solution and/or a special light to remove stains and discoloration. In some forms, the process can be accomplished in as little as an hour. 
+<br><br>
+<div style="color:blue"><b><u>Will teeth whitening affect my previous dental work?</u></b></div>
+Teeth whitening is a non-invasive procedure that is safe for patients who have had previous dental work. Your dentist will examine your existing dental work and oral hygiene before beginning the teeth whitening procedure. If there are signs that previous dental work has become weakened or needs to be fixed, your dentist will probably suggest repairs before continuing with the teeth whitening procedure. 
+<br><br>
+<div style="color:blue"><b><u>Does teeth whitening hurt?</u></b></div>
+The teeth whitening procedure is not painful; however, some patients may experience minor sensitivity around the gum line after the procedure has taken place. Patients who prefer the take home teeth bleaching kits may request that their dentist provide them with a milder concentration of the peroxide-based gel used. 
+<br><br>
+<div style="color:blue"><b><u>Why do we have wisdom teeth?</u></b></div>
+Adults can have up to 32 teeth. The wisdom teeth are the last to come through, right at the back. They usually appear when you are between 17 and 25. Although sometimes they appear many years later. 
+
+Nowadays people often have jaws that are too small for all 32 teeth â€“ 28 is often the most we have room for. So if all the other teeth are present and healthy there may not be enough space for the wisdom teeth to come through properly. 
+<br><br>
+<div style="color:blue"><b><u>Do wisdom teeth always cause problems?</u></b></div>
+No. If there is enough room they will usually come through into a useful position and cause no more problems than any other tooth. 
+Often there will be some slight discomfort as they come through, but this is only temporary and will disappear once the tooth is fully in position. 
+<br><br>
+<div style="color:blue"><b><u>What is tooth sensitivity?</u></b></div>
+Tooth sensitivity is tooth pain due to the wearing away of gum tissue. As we age, our gums start to recede, exposing the root of the tooth. This can make teeth more sensitive because the root is not covered by enamel therefore exposing the tooth's nerves. As your teeth come in contact with hot and cold food or drinks you feel pain. 
+<br><br>
+<div style="color:blue"><b><u>Who suffers from sensitive teeth?</u></b></div>
+Tooth sensitivity is one of the most common complaints dentists hear from their patients today. In fact one out of every five adults claims to suffer from pain caused by sensitive teeth. Sensitive teeth can start hurting as early as in your 20â€™s. The teeth most commonly affected are â€œcaninesâ€� and â€œpremolarsâ€�. 
+<br><br>
+<div style="color:blue"><b><u>My gums are bleeding! Why is this? How can I fix it? (Gums)</u></b></div>
+
+There are many reasons for bleeding gums, most are related to periodontal disease which can be treated by your dentist or in some cases he or she may refer you to a gum specialist who is known as a Periodontist. Bleeding gums may also be a sign of other illnesses some of which are quite serious - so it is important to find out what the reason is as soon as possible. The first person that you should contact is your dentist or if you haven't got a regular dentist, a full listing can be found through our web site by clicking on find-a-dentist.
+<br><br>
+<div style="color:blue"><b><u>How much would a full implant &amp; crown cost. I currently just wear a plate with a denture on it. (Teeth)</u></b></div>
+It is inappropriate to give you a quote on dental treatment as dental fees vary from dental practice to dental practice. 
+
+
+Implant treatment is carried out by General Dentists, Prosthodontists, Oral Surgeons and Periodontists. Implant treatment will most likely involve a team approach involving at least two of these listed professionals. Your dentist, if not involved in implant treatment, can refer you to the specialist(s) best suited for your needs.
+
+Implant treatment can give you a permanent fixed solution, but it is important to understand that it is not always the best treatment for everyone who seeks it.
+<br><br>
+<div style="color:blue"><b><u>My teeth are quite dark due to my health when I was young. I have asked my dentist for advice and was told to have them bleached. I wanted to find a cosmetic dentist who can make them white and straighten some of the teeth also. Can you please advice me on how much would it cost and who would be best to contact. (Aesthetics)</u></b></div>
+
+There is no such thing as a cosmetic dentist; all dentists perform cosmetic dentistry although some are more successful than others. Tooth whitening or bleaching, is performed by numerous dentists. Cost will depend on what needs to be done. You could try asking your friends which dentist they go to and find a friend who is happy with their cosmetic results and contact their dentist accordingly. Or, you can use the find-a-dentist section on this website to find a dentist in your local area. A few phone calls will ensure you find a dentist who can perform the cosmetics you require.
+<br><br>
+<div style="color:blue"><b><u>I have a labret/lip ring (piercing in my bottom lip) and for about 3-4 months now, the left of my two bottom front teeth has been hurting quite a bit. The gum has receded noticeably, and is showing almost the root of the tooth, i think.. (Not quite sure).. But it's painful around the gum line of that tooth.. I was just wondering if i could do anything about this.. (Gums)</u></b></div>
+Your condition, by your description, warrants immediate attention by a dentist - preferably by a Periodontist. The Periodontist is a Specialist dentist with expertise in treating afflictions of the gum tissue and your supporting bone structure. Your supporting bone that holds your teeth in their position will recede along with receding gum tissue, so if you wait too long you will risk losing your teeth.
+<br><br>
+<div style="color:blue"><b><u>I chipped my tooth recently and although it's not annoying, should I get a dentist to have a look at it? Will anything happen if I just leave it? (Teeth)</u></b></div>
+You should see a dentist to check what damage has been done. If you just leave it, there may be no further problems, but on the other hand it may break further, decay or even split. You could end up by losing the tooth.
+
+        
+        </div>
+            
+            </td>
+        </tr>
+        
+        </table>
+            
+            
+        </div>
+        <div class="footer">
+            <a href="FAQ.html#">HOME</a> <span class="horLine">|</span> <a href="FAQ.html#">ABOUT US</a> <span class="horLine">|</span> <a href="FAQ.html#">PRIVACY</a> <span class="horLine">|</span>
+            <a href="FAQ.html#">FAQ</a> <span class="horLine">|</span> <a href="FAQ.html#">CONTACT US</a><br>
+            Copy Rights 2011. All Rights Reserved.
+        </div>
+    </center>
+    </form>
+</body>
+</html>
+
+
+<!-- This document saved from FAQ.html -->
